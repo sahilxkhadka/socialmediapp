@@ -1,0 +1,29 @@
+.app__navbar {
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 1rem 3rem;
+}
+.app__navbar-links{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.app__navbar-links_menu-items {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__navbar-links_menu-items .app__navbar-links_menu-item {
+  margin-right: 4rem;
+  list-style: none;
+  font-weight: bolder;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.app__navbar-links_menu-item:hover {
+  transform: scale(1.2);
+}
