@@ -21,6 +21,9 @@
   border-radius: 10px;
   margin: 20px 0;
 }
+.rightbarTitle {
+  margin-bottom: 20px;
+}
 .rightbarFriendList {
   margin: 0;
   padding: 0;
@@ -50,4 +53,8 @@
   top: 7px;
   right: 0;
   border-radius: 50%;
+  border: 2px solid #fff;
+}
+.rightbarUsername {
+  font-weight: 500;
 }
