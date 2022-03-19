@@ -1,6 +1,7 @@
 import React from "react"
 import "./post.css"
 import { MoreVert } from "@mui/icons-material"
+import { Users } from "../../dummyData"
 
 const Post = ({post}) => {
     return (
@@ -10,8 +11,8 @@ const Post = ({post}) => {
                     <div className="postTopLeft">
                         <img 
                             className="postProfileImg"
-                            src= {post.photo} alt="" />
-                        <span className="postUserName">{post.username}</span>
+                            src= {Users.filter(item => item.id === post.userId)[0].profilePicture} alt="" />
+                        <span className="postUserName">{Users.filter(item => item.id === post.userId)[0].username}</span>
                         <div className="postDate">{post.date}</div>
                     </div>
                     <div className="postTopRight">
@@ -20,7 +21,7 @@ const Post = ({post}) => {
                 </div>
                 <div className="postCenter">
                     <span className="postText">{post?.desc}</span>
-                    <img className="postImg" src="/assets/post/1.jpeg" alt="" />
+                    <img className="postImg" src= {post.photo} alt="" />
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
