@@ -10,9 +10,9 @@ const Home = () => {
     <>
       <Topbar />
       <div className="homecontainer">
-      <Sidebar />
-      <Feed />
-      <Rightbar />
+        <Sidebar />
+        <Feed />
+        <Rightbar />
       </div>
     </>
   )
