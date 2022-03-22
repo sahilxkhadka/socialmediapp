@@ -22,18 +22,6 @@ const Topbar = () => {
             <span className="topbarLink">Home</span>
           </NavLink>
           <span className="topbarLink">Timeline</span>
-          <NavLink to = "/login">
-            <span className="topbarLink">Login</span>
-          </NavLink>
-          <NavLink to = "/register">
-            <span className="topbarLink">Register</span>
-          </NavLink>
-          {/* <NavLink to= "/login">
-            <span className="topbarLink">Login</span>
-          </NavLink>
-          <NavLink tp = "/register">
-            <span className="topbarLink">Register</span>
-          </NavLink> */}
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">

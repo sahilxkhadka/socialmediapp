@@ -43,7 +43,7 @@ a {
   margin-left: 1rem;
 }
 .topbarRight {
-  flex: 6;
+  flex: 4;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
