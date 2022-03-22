@@ -30,8 +30,8 @@
   list-style: none;
 }
 .rightbarTitle {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 .rightbarInfoItem {
@@ -40,9 +40,29 @@
 .rightbarInfo {
 	margin-bottom: 30px;
 }
+.rightbarInfokey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+.rightbarInfoValue {
+  font-weight: 400;
+}
+.rightbarFollowings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rightbarFollowing {
+  flex: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 .rightbarFollowingImg {
 	width: 100px;
 	height: 100px;
 	object-fit: cover;
-	border-radius: 50%;
 }

@@ -26,7 +26,7 @@ export default function Rightbar({ profile }) {
 	const ProfileRightbar = () => {
 		return (
 			<>
-				<h4 className="rightbarTitle">User Info</h4>
+				<h4 className="rightbarTitle">Basic Info</h4>
 				<div className="rightbarInfo">
 					<div className="rightbarInfoItem">
 						<span className="rightbarInfokey">
@@ -53,44 +53,16 @@ export default function Rightbar({ profile }) {
 						</span>
 					</div>
 				</div>
-				<h4 className="rightbarTitle">User Friends</h4>
+				<h4 className="rightbarTitle">Friends</h4>
 				<div className="rightbarFollowings">
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
-					<div className="rightbarFollowing">
-						<img src="assets/person/1.jpeg" className='rightbarFollowingImg' alt="" />
-						<span className="rightbarFollowingName">
-							Lieonel Messi
-						</span>
-					</div>
+					{Users.map(user => (
+						<div className="rightbarFollowing">
+							<img src= {user.profilePicture} className='rightbarFollowingImg' alt="" />
+							<span className="rightbarFollowingName">
+								{user.username}
+							</span>
+						</div>
+					))}
 				</div>
 			</>
 		)
@@ -99,7 +71,11 @@ export default function Rightbar({ profile }) {
 	return (
 		<div className='rightbar'>
 			<div className="rightbarWrapper">
-				<ProfileRightbar />
+				{profile ?
+					<ProfileRightbar />
+					:
+					<HomeRightbar />
+				}
 			</div>
 		</div>
 	)
